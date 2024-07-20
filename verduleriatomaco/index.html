@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verduleria Tomaco</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/2y6lO0hVVj+7et7hM2q6sEl0r87V7FSfjDQ5jf5y4sfofs" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <h1>Verduleria Tomaco</h1>
+                <!-- agregar iconos -->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li class="ml-4 pl-4"><a href="sesion.html">Mi cuenta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside id="orden-rapida">
+            <!-- llamado a la acción rapida -->
+            <div class="container">
+                <div class="ordenar-ahora mt-4 mb-4">
+                    <div class="text-center bloque-compra-rapida">
+                        <!-- texto para realizar una compra rápida -->
+                        <p class="m-0 p-0 mr-3">Elige los productos que necesitas y haz tu <span><a class="btn text-uppercase" href="#">compra
+                                rápida</a> </span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="busqueda_compraRapida">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section id="portada">
+            <div class="portada">
+                <div class="container portada-bienvenida">
+                    <h2 class="text-uppercase">Verduleria Tomaco</h2>
+                    <p>En nuestra verduleria encontrarás los mejores productos de la temporada</p>
+                    <!-- llamado a la accion rapida boton más icono de carrito de compras-->
+                    <div class="ver-productos">
+                        <button type="button" class="btn-productos btn btn-warning ">
+                            <i class="fas fa-shopping-cart"></i>Ver productos</button>
+                    </div>
+                    <!-- corta historia de la verduleria -->
+                    <div class="corta-historia">
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                            voluptatibus, quae, quidem, voluptas, quibusdam quia voluptatem quas quos quia quibusdam
+                            quae voluptatibus, quae, quidem, voluptas, quibusdam quia voluptatem quas quos quia
+                            quibusdam quae</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="promotions" class="promotions-section">
+            <div class="container">
+                <div class="titulo">
+                    <h2 class="section-title mb-5">Ofertas y Promociones</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="promo-grid">
+                    <div class="promo-item">
+                        <img src="/assets/images/frutas.jpg" alt="Promo 1" class="promo-image">
+                        <div class="promo-content">
+                            <div>
+                                <h3 class="promo-title">Descuento en Frutas</h3>
+                                <p class="promo-description">Aprovecha un 20% de descuento en todas nuestras frutas
+                                    frescas.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="promo-price">$10 <del>$12</del></span>
+                            </div>
+                            <button class="promo-button">Ver Oferta</button>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <img src="/assets/images/verduras-organicas.jpg" alt="Promo 2" class="promo-image">
+                        <div class="promo-content">
+                            <div>
+                                <h3 class="promo-title">Verduras Orgánicas</h3>
+                                <p class="promo-description">Compra 2 y lleva 3 en nuestras verduras orgánicas
+                                    seleccionadas.</p>
+                            </div>
+                            <div>
+                                <span class="promo-price">$8 <del>$10</del></span>
+                            </div>
+                            <button class="promo-button">Ver Oferta</button>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <img src="/assets/images/hierbas-frescas.jpg" alt="Promo 3" class="promo-image">
+                        <div class="promo-content">
+                            <div>
+                                <h3 class="promo-title">Hierbas Frescas</h3>
+                                <p class="promo-description">Descuento del 15% en todas nuestras hierbas frescas.</p>
+                            </div>
+                            <div>
+                                <span class="promo-price">$5 <del>$6</del></span>
+                            </div>
+                            <button class="promo-button">Ver Oferta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-verduleria">
+            <div class="container">
+                <div class="row">
+                    <div class="col columna-productos">
+                        <h5>PRODUCTOS</h5>
+                        <ul>
+                            <li><a href="#">Frutas</a></li>
+                            <li><a href="#">Verduras</a></li>
+                            <li><a href="#">Hierbas y Especias</a></li>
+                            <li><a href="#">Orgánicos</a></li>
+                            <li><a href="#">Ver más</a></li>
+                        </ul>
+                    </div>
+                    <div class="col columna-empresa">
+                        <h5>EMPRESA</h5>
+                        <ul>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Calidad de nuestros productos</a></li>
+                            <li><a href="#">Valores de nuestra empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col columna-suscripcion">
+                        <h5>Sigamos en contacto</h5>
+                        <p>Suscribite a nuestro newsletter semanal de email marketing para recibir todas las promociones
+                            y ofertas, no te pierdas nada</p>
+                        <form action="" method="post">
+                            <input type="text" name="email" placeholder="Ingresa tu email">
+                            <button class="btn btn-suscribirme" type="submit">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separador container mt-4 mb-4">
+                <span class="elemento-separador"></span>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- derechos reservados y política de compra -->
+                    <div class="derechos-politica-compra text-left">
+                        <ul>
+                            <li>
+                                <p class="derechos-reservados">Derechos reservados © 2020</p>
+                            </li>
+                            <li>
+                                <p><a href="/src/pages/pages_compra_devolucion_defensa.html#compra-linea">Política de
+                                        compra en línea</a> | <a
+                                        href="/src/pages/pages_compra_devolucion_defensa.html#devolucion-productos">Devolución
+                                        de productos</a> | <a
+                                        href="/src/pages/pages_compra_devolucion_defensa.html#defensa-consumidor">Defensa
+                                        del consumidor</a> | <a href="/src/pages/sugerencias_reclamos.html">Sugerencias
+                                        o reclamos</a></p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- archivos JS -->
+    <script src="js/menu-hamburguesa.js"></script>
+    <!-- Link Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

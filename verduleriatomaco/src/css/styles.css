@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  display: flex;
+  align-items: center;
+}
+
+/* navegador y header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+header .top-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c601f;
+  color: #fff;
+  padding: 10px 0;
+}
+header .top-header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-header .container h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+header .top-header .container nav {
+  display: flex;
+  align-items: center;
+}
+header .top-header .container nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header .top-header .container nav .nav-list li {
+  margin: 0 15px;
+}
+header .top-header .container nav .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+header .top-header .container nav .hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #27ae60;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-list.show {
+    display: flex;
+  }
+  .nav-list li {
+    margin: 15px 0;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+/* inicio main  */
+/* inicio aside */
+#orden-rapida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 40px 0;
+}
+#orden-rapida .ordenar-ahora {
+  margin: 20px 0;
+  padding: 40px;
+  width: 100%;
+}
+#orden-rapida .ordenar-ahora p {
+  font-size: larger;
+  border-top: #333 1px solid;
+  border-bottom: #333 1px solid;
+}
+
+#portada {
+  padding: 100px 0px;
+  background-image: url(/assets/images/portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#portada .portada-bienvenida {
+  flex-wrap: wrap;
+}
+#portada .portada-bienvenida h2 {
+  font-size: 6rem;
+  text-shadow: #0056b3 2px 2px 4px;
+  color: #f7f7f7;
+}
+#portada .portada-bienvenida p {
+  font-size: 2em;
+  margin-bottom: 35px;
+  color: #f7f7f7;
+  text-shadow: #0056b3 2px 2px 4px;
+}
+#portada .portada-bienvenida .ver-productos {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portada .portada-bienvenida .ver-productos .btn-productos {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #e4cb77;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#portada .portada-bienvenida .ver-productos .btn-productos:hover {
+  background-color: #e0a800;
+}
+#portada .portada-bienvenida .ver-productos .btn-productos i {
+  margin-right: 10px;
+}
+#portada .portada-bienvenida .corta-historia {
+  margin: 3rem 0;
+}
+#portada .portada-bienvenida .corta-historia p {
+  font-size: 1.2rem;
+  text-shadow: none;
+}
+
+/* ofertas y promociones */
+.promotions-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+.promotions-section .titulo {
+  width: 100%;
+}
+.promotions-section .titulo .section-title {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #3c601f;
+  margin-bottom: 20px;
+}
+.promotions-section .container {
+  /*   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; */
+}
+.promotions-section .container .promo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.promotions-section .container .promo-grid .promo-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.promotions-section .container .promo-grid .promo-item .promo-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content {
+  padding: 20px;
+  flex-direction: column;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-title {
+  font-size: 1.5em;
+  color: #3c601f;
+  margin-bottom: 10px;
+  padding: 20px 0px;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-price {
+  font-size: 3.6em;
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-price del {
+  font-size: 40px;
+  color: #999;
+  margin-left: 10px;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-button {
+  margin-top: 40px;
+  background-color: #3c601f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.promotions-section .container .promo-grid .promo-item .promo-content .promo-button:hover {
+  background-color: #4a8b15;
+}
+
+/* inicio footer */
+.footer-verduleria {
+  background-color: #e4cb77;
+  padding: 2em;
+}
+.footer-verduleria a {
+  color: #212529;
+}
+.footer-verduleria a:hover {
+  color: #1b1e22;
+}
+.footer-verduleria .separador .elemento-separador {
+  display: block; /* Converts span to block-level to apply width and height */
+  height: 1px; /* Thickness of the line */
+  background-color: #8b8b8b; /* Color of the line, adjust as needed */
+  width: 100%; /* Width of the line, adjust as needed */
+  margin: 10px 0; /* Space above and below the line, adjust as needed */
+  padding: 0;
+}
+.footer-verduleria .btn-suscribirme {
+  color: #fff;
+  background-color: #3c601f;
+}
+.footer-verduleria .btn-suscribirme:hover {
+  background-color: #4a8b15;
+}
+
+/*# sourceMappingURL=styles.css.map */

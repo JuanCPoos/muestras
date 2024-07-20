@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fuentes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "quador", serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.header-wrapper {
+  margin: 0;
+}
+.header-wrapper .header-top {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #c2c1c1;
+  border-bottom: #0b9d96 2px solid;
+  color: #fff;
+}
+.header-wrapper .header-top .header-top-left a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0b9d96;
+}
+.header-wrapper .header-top .header-top-right {
+  text-align: right;
+}
+.header-wrapper .header-top .header-top-right .welcome-msg {
+  font-size: 0.7857em;
+}
+.header-wrapper .header-main {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  border-bottom: #0b9d96 2px solid;
+  color: #fff;
+}
+.header-wrapper .header-main .header-left {
+  text-align: right;
+}
+.header-wrapper nav {
+  background-color: #fff;
+}
+.header-wrapper nav ul {
+  display: inline;
+}
+.header-wrapper nav ul li {
+  list-style-type: none;
+}
+.header-wrapper nav ul li a {
+  text-decoration: none;
+}
+
+/* main  */
+#main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main a {
+  color: #000;
+}
+#main #bienvenida {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5em;
+}
+#main #bienvenida .banner-container {
+  position: relative;
+  width: 100%;
+  /* Estilo para la imagen de fondo */
+  /* Estilo para el overlay con color oscuro */
+  /* Estilo para el contenedor que centra el logo y el mensaje */
+}
+#main #bienvenida .banner-container .banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#main #bienvenida .banner-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Color negro con opacidad del 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+#main #bienvenida .banner-container .container {
+  position: relative;
+  text-align: center;
+}
+#main #bienvenida .banner-container .msg-bienvenida {
+  color: #0b9d96;
+  letter-spacing: 2px;
+}
+#main #bienvenida .banner-container .msg-bienvenida h1 {
+  font-size: 4em;
+}
+#main #end-main {
+  margin: 0;
+  padding: 0;
+}
+#main #end-main .ubicacion {
+  display: flex;
+  padding: 0;
+  margin-top: 4em;
+}
+#main #end-main .form-group {
+  margin: 10px 0;
+}
+#main #end-main .form-group label {
+  font-size: 14px;
+}
+#main #end-main .form-group input,
+#main #end-main .form-group textarea {
+  padding: 10px;
+  background-color: #1b1b1b;
+  font-size: 13px;
+  color: #fff;
+}
+#main #end-main .form-group input::placeholder,
+#main #end-main .form-group textarea::placeholder {
+  color: #fff;
+}
+#main #end-main .boton-formulario {
+  margin: 16px 0;
+}
+#main #end-main .boton-formulario .btn-form {
+  padding: 8px 24px;
+  background-color: #0b9d96;
+  color: #fff;
+}
+#main #end-main .boton-formulario .btn-form:hover {
+  background-color: #07706b;
+  text-decoration: underline;
+}
+#main #quienes-somos {
+  margin: 0;
+  padding: 4em;
+}
+#main #quienes-somos .somos p {
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+#main #quienes-somos .somos span {
+  font-weight: 700;
+}
+#main #quienes-somos .somos h2 {
+  margin: 0 0 32px 0;
+}
+#main #quienes-somos .somos .linkeando-talento {
+  padding: 8px 0 8px 16px;
+  border-left: 5px #0b9d96 solid;
+}
+#main #quienes-somos .somos .linkeando-talento p {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+#main #quienes-somos .somos .linkeando-talento em {
+  font-style: italic;
+}
+#main #quienes-somos .somos .img-somos {
+  display: flex;
+  margin: 0 auto;
+}
+#main #quienes-somos .somos .img-somos img {
+  width: 100%;
+}
+
+/* inicio footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-around;
+}
+footer .autoria_derechos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #000;
+  color: aliceblue;
+  padding-top: 10px;
+}
+footer .autoria_derechos p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=styles.css.map */
