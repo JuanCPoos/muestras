@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/bnq2axc.css">
     <!-- link css -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- link de bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -90,11 +92,11 @@
         <section id="bienvenida">
             <!-- imagen institucional -->
             <div class="banner-container">
-                <img src="/assets/images/banner-main.png" class="banner-img" alt="imagen institucional">
+                <img src="./assets/images/banner-main.png" class="banner-img" alt="imagen institucional">
                 <div class="overlay">
                     <div class="container text-center">
                         <div class="img-logo">
-                            <img src="/assets/images/Logo3.png" width="170" alt="logo institucional">
+                            <img src="assets/images/Logo3.png" width="170" alt="logo institucional">
                         </div>
                         <div class="msg-bienvenida p-5">
                             <h1>Experiencia y Compromiso</h1>
@@ -103,111 +105,121 @@
                 </div>
             </div>
         </section>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- banner contacto --> <!-- CORREGIR BANNER RESPONSIVE -->
-                <main>
-                    <!-- quienes somos -->
-                    <section id="quienes-somos">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="somos">
-                                        <h2><span>Quiénes</span> somos ?</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe adipisci hic
-                                            blanditiis
-                                            tempora vero
-                                            consequatur culpa recusandae totam perferendis, numquam autem eveniet
-                                            excepturi quod
-                                            delectus sunt,
-                                            exercitationem suscipit est alias inventore doloribus, odio nihil incidunt?
-                                            Animi,
-                                            consequatur. Amet
-                                            illum facilis laudantium ipsa fugiat sunt atque ratione nobis, ullam modi
-                                            libero
-                                            laborum
-                                            rerum quae provident quos excepturi corrupti quidem asperiores! </p>
-                                        <!-- span para hacer un borde grueso a la izquierda que contenga un texto pequeño -->
-                                        <blockquote class="linkeando-talento">
-                                            <p> <strong>Consultora Recursos Humanos</strong><br>
-                                                <span style="color: #283341;">
-                                                    <em>
-                                                        <i>Linkeando taletos</i>
-                                                    </em>
-                                                </span>
-                                            </p>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <!-- imagen que acompaña quienes somos -->
-                                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="img-somos container">
-                                        <img src="/assets/images/rrhh-mesa.jpg" width="450" alt="imagen quienes somos">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- end main maps y contactos -->
-                    <section id="end-main" class="m-4">
-                        <div class="container">
-                            <!-- columnas para enlaces, contacto y mapa de ubicación -->
-                            <div class="row">
-                                <h2 class="text-center">Contáctenos</h2>
-                                <!-- formulario de contacto -->
-                                <div class="col-6 col-md-6 col-lg-6 col-sm-12">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <label for="nombre">Nombre</label>
-                                            <input type="text" class="form-control" id="nombre" name="nombre"
-                                                placeholder="Ernesto de la Cruz">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email"
-                                                placeholder="pepitaperez@email.com">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="asunto">Asunto</label>
-                                            <input type="asunto" class="form-control" id="asunot" name="asunto"
-                                                placeholder="Asunto del mensaje">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="mensaje">Mensaje</label>
-                                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
-                                                placeholder="Mi consulta es por..."></textarea>
-                                        </div>
-                                        <p class="boton-formulario">
-                                            <input class="btn btn-form" type="submit" value="Enviar Consultar" />
+        <div>            
+            <main>
+                <!-- quienes somos -->
+                <section id="quienes-somos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="somos">
+                                    <h2><span>Quiénes</span> somos ?</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe adipisci hic
+                                        blanditiis
+                                        tempora vero
+                                        consequatur culpa recusandae totam perferendis, numquam autem eveniet
+                                        excepturi quod
+                                        delectus sunt,
+                                        exercitationem suscipit est alias inventore doloribus, odio nihil incidunt?
+                                        Animi,
+                                        consequatur. Amet
+                                        illum facilis laudantium ipsa fugiat sunt atque ratione nobis, ullam modi
+                                        libero
+                                        laborum
+                                        rerum quae provident quos excepturi corrupti quidem asperiores! </p>
+                                    <!-- span para hacer un borde grueso a la izquierda que contenga un texto pequeño -->
+                                    <blockquote class="linkeando-talento">
+                                        <p> <strong>Consultora Recursos Humanos</strong><br>
+                                            <span style="color: #283341;">
+                                                <em>
+                                                    Linkeando taletos
+                                                </em>
+                                            </span>
                                         </p>
-                                    </form>
+                                    </blockquote>
                                 </div>
-                                <div class="col-6 col-md-6 col-lg-6 col-sm-12">
-                                    <!-- contacto con la empresa -->
-                                    <div class="text-center">
-                                        <h4 class="pt-4">Información</h4>
-                                        <p>Correo: contacto@empresa.com</p>
-                                        <p>Telefono: 123456789</p>
-                                        <p>Direccion: Calle 123, 456</p>
+                            </div>
+                            <!-- imagen que acompaña quienes somos -->
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="img-somos text-center">
+                                    <img src="./assets/images/rrhh-mesa.jpg" width="450" alt="imagen quienes somos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end main maps y contactos -->
+                <section id="end-main">
+                    <div class="container">
+                        <!-- columnas para enlaces, contacto y mapa de ubicación -->
+                        <div class="row">
+                            <h2 class="text-center m-5">Contáctenos</h2>
+                            <!-- formulario de contacto -->
+                            <div class="col-6 col-md-6 col-lg-6 col-sm-12">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            placeholder="Ernesto de la Cruz">
                                     </div>
-
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="pepitaperez@email.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="asunto">Asunto</label>
+                                        <input type="asunto" class="form-control" id="asunot" name="asunto"
+                                            placeholder="Asunto del mensaje">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                                            placeholder="Mi consulta es por..."></textarea>
+                                    </div>
+                                    <p class="boton-formulario">
+                                        <input class="btn btn-form" type="submit" value="Enviar Consultar" />
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 col-sm-12">
+                                <!-- contacto con la empresa -->
+                                <div class="text-left">
+                                    <h2 class="pt-4"><span>Dónde</span>  Estamos</h2>
+                                    <!-- línea de separacion fina  -->
+                                    <hr class="linea-separacion"> 
+                                    <div class="datos-ubicacion">
+                                        <div class="ubi-icon">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div class="ubi-text">
+                                            <p>Av. 1 de Mayo 123</p>
+                                        </div>
+                                    </div>
+                                    <div class="datos-ubicacion">
+                                        <div class="ubi-icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </div>
+                                        <div class="ubi-text">
+                                            <p><b>Email:</b>info@consultorarecursoshumanos.com</p>
+                                        </div>
+                                    </div>
+                                                                        
                                 </div>
+
                             </div>
                         </div>
-                        <div class="ubicacion col-md-12">
-                            <div class="row">
-                                <div class="maps col-md-12">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.805944521324!2d-73.99929388523567!3d40.74844058597721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sCentral%20Park%2C%20New%20York%2C%20NY%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sve!4v1606909401030!5m2!1ses-419!2sve"
-                                        width="1903" height="570" frameborder="0" style="border:0;" allowfullscreen=""
-                                        aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-
-                            </div>
+                    </div>
+                    <div class="ubicacion col-md-12">
+                        <div class="maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.805944521324!2d-73.99929388523567!3d40.74844058597721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sCentral%20Park%2C%20New%20York%2C%20NY%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sve!4v1606909401030!5m2!1ses-419!2sve"
+                                width="1903" height="570" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
                         </div>
-                    </section>
-                </main>
-            </div>
+                    </div>
+                </section>
+            </main>
         </div>
     </div>
     <!-- fin main -->

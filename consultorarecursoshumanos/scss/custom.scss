@@ -12,7 +12,14 @@ h5,
 h6 {
   font-family: "quador", serif;
 }
-
+i{
+  background-color: #0b9d96;
+  border-radius: 50%;
+  padding: 5px;
+  color:#fff;
+  margin: 5px;
+  font-size: 1em;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -25,7 +32,10 @@ a {
 ul > li {
   list-style-type: none;
 }
-
+main {
+  margin: 0;
+  padding: 0;
+}
 .header-wrapper {
   margin: 0;
   .header-top {
@@ -86,7 +96,7 @@ ul > li {
 /* main  */
 
 #main {
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   padding: 0;
   a {
@@ -95,9 +105,9 @@ ul > li {
   #bienvenida {
     position: relative;
     overflow: hidden;
-    margin-bottom: 5em;
+    
     .banner-container {
-      position: relative;
+      /* position: relative; */
       width: 100%;
 
       /* Estilo para la imagen de fondo */
@@ -132,12 +142,55 @@ ul > li {
         h1 {
           font-size: 4em;
         }
+        @media (width:900px){
+          #bienvenida{
+            h1{
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+  #quienes-somos {
+    margin: 0;
+    padding: 6em;
+    background-color: #eceaea;
+    .somos {
+      p {
+        font-weight: 300;
+        margin: 0 0 20px 0;
+      }
+      span {
+        font-weight: 700;
+      }
+      h2 {
+        margin: 0 0 32px 0;
+      }
+      .linkeando-talento {
+        padding: 8px 0 8px 16px;
+        border-left: 5px #0b9d96 solid;
+        p {
+          font-size: 0.7em;
+          margin: 0;
+          padding: 0;
+        }
+        em {
+          font-style: italic;
+        }
+      }
+      .img-somos {        
+        margin: 0 auto;
+        img {
+          width: 100%;
+        }
       }
     }
   }
 
   #end-main {
-    margin: 0;
+    margin: 4em 0;
     padding: 0;
     .ubicacion {
       display: flex;
@@ -145,6 +198,7 @@ ul > li {
       margin-top: 4em;
 
     }
+    
     .form-group {
       margin: 10px 0;
       label {
@@ -173,40 +227,23 @@ ul > li {
         }
       }
     }
-  }
-
-  #quienes-somos {
-    margin: 0;
-    padding: 4em;
-    .somos {
-      p {
-        font-weight: 300;
-        margin: 0 0 20px 0;
-      }
-      span {
+    h2{
+      span{
         font-weight: 700;
       }
-      h2 {
-        margin: 0 0 32px 0;
-      }
-      .linkeando-talento {
-        padding: 8px 0 8px 16px;
-        border-left: 5px #0b9d96 solid;
-        p {
-          font-size: 0.7em;
-          margin: 0;
-          padding: 0;
-        }
-        em {
-          font-style: italic;
-        }
-      }
-      .img-somos {
-        display: flex;
-        margin: 0 auto;
-        img {
-          width: 100%;
-        }
+      color:#0b9d96;
+    }
+    .linea-separacion{
+      margin: 0 0 20px 0;      
+    }
+    .datos-ubicacion{
+      
+      display: flex;
+      align-content: center;
+      margin-bottom: 10px;
+      .ubi-icon{
+        margin: 0;
+        padding:0 ;
       }
     }
   }

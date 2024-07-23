@@ -14,6 +14,15 @@ h6 {
   font-family: "quador", serif;
 }
 
+i {
+  background-color: #0b9d96;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  margin: 5px;
+  font-size: 1em;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -27,6 +36,11 @@ a:hover {
 
 ul > li {
   list-style-type: none;
+}
+
+main {
+  margin: 0;
+  padding: 0;
 }
 
 .header-wrapper {
@@ -79,7 +93,7 @@ ul > li {
 
 /* main  */
 #main {
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   padding: 0;
 }
@@ -89,10 +103,9 @@ ul > li {
 #main #bienvenida {
   position: relative;
   overflow: hidden;
-  margin-bottom: 5em;
 }
 #main #bienvenida .banner-container {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   /* Estilo para la imagen de fondo */
   /* Estilo para el overlay con color oscuro */
@@ -127,8 +140,46 @@ ul > li {
 #main #bienvenida .banner-container .msg-bienvenida h1 {
   font-size: 4em;
 }
-#main #end-main {
+@media (width: 900px) {
+  #main #bienvenida .banner-container .msg-bienvenida #bienvenida h1 {
+    font-size: small;
+  }
+}
+#main #quienes-somos {
   margin: 0;
+  padding: 6em;
+  background-color: #eceaea;
+}
+#main #quienes-somos .somos p {
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+#main #quienes-somos .somos span {
+  font-weight: 700;
+}
+#main #quienes-somos .somos h2 {
+  margin: 0 0 32px 0;
+}
+#main #quienes-somos .somos .linkeando-talento {
+  padding: 8px 0 8px 16px;
+  border-left: 5px #0b9d96 solid;
+}
+#main #quienes-somos .somos .linkeando-talento p {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+#main #quienes-somos .somos .linkeando-talento em {
+  font-style: italic;
+}
+#main #quienes-somos .somos .img-somos {
+  margin: 0 auto;
+}
+#main #quienes-somos .somos .img-somos img {
+  width: 100%;
+}
+#main #end-main {
+  margin: 4em 0;
   padding: 0;
 }
 #main #end-main .ubicacion {
@@ -165,38 +216,23 @@ ul > li {
   background-color: #07706b;
   text-decoration: underline;
 }
-#main #quienes-somos {
-  margin: 0;
-  padding: 4em;
+#main #end-main h2 {
+  color: #0b9d96;
 }
-#main #quienes-somos .somos p {
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-#main #quienes-somos .somos span {
+#main #end-main h2 span {
   font-weight: 700;
 }
-#main #quienes-somos .somos h2 {
-  margin: 0 0 32px 0;
+#main #end-main .linea-separacion {
+  margin: 0 0 20px 0;
 }
-#main #quienes-somos .somos .linkeando-talento {
-  padding: 8px 0 8px 16px;
-  border-left: 5px #0b9d96 solid;
+#main #end-main .datos-ubicacion {
+  display: flex;
+  align-content: center;
+  margin-bottom: 10px;
 }
-#main #quienes-somos .somos .linkeando-talento p {
-  font-size: 0.7em;
+#main #end-main .datos-ubicacion .ubi-icon {
   margin: 0;
   padding: 0;
-}
-#main #quienes-somos .somos .linkeando-talento em {
-  font-style: italic;
-}
-#main #quienes-somos .somos .img-somos {
-  display: flex;
-  margin: 0 auto;
-}
-#main #quienes-somos .somos .img-somos img {
-  width: 100%;
 }
 
 /* inicio footer */
