@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .botonera {
+  margin: 0 auto;
+  width: 200px;
+  height: 400px;
+  background-color: rgb(18, 71, 141);
+  padding: 10px;
+}
+main .botonera .btn {
+  padding: 10px;
+  font-size: 20px;
+}
+main .botonera .contenedor-pantalla {
+  background-color: rgb(29, 29, 29);
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+main .botonera .contenedor-pantalla .pantalla {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+}
+main .botonera .contenedor-externo {
+  background-color: aliceblue;
+  padding: 1px;
+}
+main .botonera .contenedor-externo .col-left {
+  display: inline;
+  flex-direction: row;
+  float: left;
+}
+main .botonera .contenedor-externo .contenedor-sumar-igual {
+  float: right;
+  display: inline;
+}
+main .botonera .contenedor-externo .contenedor-sumar-igual .btn-sumar {
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
