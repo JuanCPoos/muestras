@@ -78,9 +78,39 @@ main {
     }
     .header-rigth {
       .menu-hamburguesa {
-        nav {
+        background-color: white;
+      
+        &__icono {
+          nav {
+            ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+      
+              li {
+                margin-right: 20px;
+      
+                a {
+                  text-decoration: none;
+                  color: green;
+                  padding: 10px 15px;
+                  display: block;
+      
+                  &:hover {
+                    background-color: green;
+                    color: white;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
         }
       }
+      
     }
   }
   nav {
