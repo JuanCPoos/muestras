@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.goblal__container {
+  background-color: rgba(148, 148, 148, 0.3);
+}
+.goblal__container .contorno-exterior {
+  padding: 20px; /* Ajusta el padding según sea necesario */
+  border-radius: 10px; /* Agrega bordes redondeados si es necesario */
+}
+.goblal__container .contorno-exterior .contorno-interior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; /* Ajusta el gap según sea necesario */
+  box-shadow: 2px 2px 2px rgba(148, 148, 148, 0.5);
+}
+.goblal__container .contorno-exterior .contorno-interior .horas, .goblal__container .contorno-exterior .contorno-interior .dot {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em;
+  font-weight: 700;
+  color: black; /* Color de los números */
+}
+.goblal__container .contorno-exterior .contorno-interior .contenedor-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.2em;
+}
+.goblal__container .contorno-exterior .contorno-interior .dot {
+  content: "|";
+  font-size: 3em;
+  line-height: 1;
+}
+.goblal__container .contorno-exterior .contorno-interior .contenedor-horas,
+.goblal__container .contorno-exterior .contorno-interior .contenedor-minutos,
+.goblal__container .contorno-exterior .contorno-interior .contenedor-segundos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em; /* Ajusta el ancho según sea necesario */
+}
+.goblal__container .footer-bottom {
+  color: #333;
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;
+  padding-bottom: 10px;
+}
+.goblal__container .footer-bottom .autor {
+  margin: 0;
+  padding: 0;
+}
+.goblal__container .footer-bottom .autor a {
+  color: #cf9416;
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+.goblal__container .footer-bottom .autor .custom-icon {
+  display: inline-block; /* Asegura que se comporte como un elemento en línea */
+  width: 24px; /* Ajusta el tamaño según sea necesario */
+  height: 24px; /* Ajusta el tamaño según sea necesario */
+  background-image: url("/assets/images/llama-origami.png"); /* Ruta a tu imagen PNG */
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
+}
+
+/*# sourceMappingURL=main.css.map */
